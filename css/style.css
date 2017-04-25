@@ -1,0 +1,215 @@
+
+
+.contenedor{
+    max-width: 900px;
+    margin: auto;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+}
+header{
+    background:yellow;
+}
+header h1{
+    font-size: 80px;
+}
+header h2{
+    font-size: 40px;
+}
+.textos article {
+    display: inline-block;
+    width: 49%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* breakpoint - donde le digo que cambie algo
+media screen -´para pantallas
+media tv
+media print
+unir condiciones con "and"
+si cumple las condiciones, lo va a hacer, sino no*/
+@media screen and (max-width: 768px){
+    header h1{
+        font-size: 60px;
+    }
+    header h1{
+        background: pink;
+    }
+}
+@media (max-width: 480px){
+    header h1{
+        font-size: 40px;
+        color: white;
+    }
+    header{
+        background:blue;
+    }
+}
+.solo-mobile{
+    display: none;
+}
+@media (max-width: 600px){
+    .textos article{
+        width: 100%;
+        display: block;
+    }
+    .texto article .solo-desktop{
+        display: none;
+    }
+    .solo-mobile{
+        display: inline-block;
+    }
+}
+/* breakpoint establecidos:
+si o si en un 320px (iphone 5, samsung s5)
+480
+768
+1020
+1440
+http://getbootstrap.com/
+;
+*/
+section{
+    padding: 100px 0;
+}
+.boton{
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 10px 30px;
+    transition: 1s;
+}
+.boton:hover{
+    background: blue;
+    transform: scale(2); rotate: (15deg);
+}
+
+
+.otro-contenedor{
+	color: grey
+}
+
+.iconos{
+	transition: 1s;
+	font-size: 30px;
+	color:grey;
+	display: inline-block;
+}
+
+.ion-social-instagram-outline:hover{
+	color: #32003;
+}
+
+.ion-social-facebook:hoover{
+	color: #3b5998;
+}
+.ion-social-snapchat:hoover{
+	color: #fffc00;
+}
+
+.ion-social-linkedin:hoover{
+	color: #007bb5;
+}
+
+}
+
+.iconos;hoover{
+	transform: scale(1,2);
+}
+
+
+@keyframes cambiar{
+	from{
+		background-color: red;
+	}
+
+	to{
+		background-color: blue;
+	}
+}
+
+@keyframes cambiar2{
+	0%{
+		background: red;
+	}
+
+	20%{
+		background: yellow;
+		transform: scale(2) translate (400px,100px);
+	}
+
+	40%{
+		background: green;
+		transform: scale(0,5) translate(100px,200px);
+	}
+
+	60%{
+		background:blue;
+		transform: scale(1) translate(50px,180px);
+
+	}
+
+	80%{
+		background: violet;
+		transform: scale(2,3);
+	}
+
+	100%{
+		background: red;
+		transform:scale(1);
+	}
+	
+}
+
+.circulo{
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;
+	display: inline-block;
+	animation-name: cambiar2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+
+.ruedas div{
+	margin:auto;
+	display: inline-block;
+	animation-name: ruedas;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+	
+
+.uno {
+	font-size: 200px;
+	margin: auto;
+}
+
+.dos {
+	font-size: 200px;
+	margin: auto;
+}
+
+.tres {
+	font-size: 200px;
+	margin: auto;
+}
+
+.cuatro {
+	font-size: 200px;
+	margin: auto;
+}
+
+@keyframes ruedas{
+	from{
+	}
+	to{
+
+	}
+}
